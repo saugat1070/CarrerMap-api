@@ -1,12 +1,12 @@
 import nodemailer from 'nodemailer';
 import { mailData } from '../../globalConfig/interface';
-
+import { envConfig } from '../../globalConfig/dotenvConfig';
 const sendMail = async (data:mailData)=>{
     const transporter = nodemailer.createTransport({
         service:"gmail",
     auth:{
-        user:"saugatgiri1070@gmail.com",
-        pass:"ntzookwzoutlzkrj"
+        user:envConfig.email,
+        pass:envConfig.email_password
     }
 })
 try {
