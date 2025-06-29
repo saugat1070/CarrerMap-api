@@ -1,0 +1,32 @@
+{
+  "name": "carrermap-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saugat1070/CarrerMap-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saugat1070/CarrerMap-api/issues"
+  },
+  "homepage": "https://github.com/saugat1070/CarrerMap-api#readme",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "mongoose": "^8.16.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
