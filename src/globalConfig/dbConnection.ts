@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
 import { envConfig } from './dotenvConfig';
-export const dbConnection = async ()=>{
-    await mongoose.connect(envConfig.dbUrl).then(()=>{
-        console.log("Database Connection successfully");
-    }).catch(()=>{
-        console.log("Database connection failed");
-    })
+export const dbConnection = async () => {
+    try {
+         await mongoose.connect(envConfig.dbUrl).then(()=>{
+            console.log("Database is connected successfull");
+         }).catch((err:any)=>console.log("issue"+err?.message))
+        
+    } catch (error:any) {
+        console.log("Database connection due to server");
+    }
 }

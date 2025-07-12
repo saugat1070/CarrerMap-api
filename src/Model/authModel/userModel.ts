@@ -17,6 +17,11 @@ const userAuthModel = new mongoose.Schema({
         type:String,
         enum: [userRole.student,userRole.mentor,userRole.admin],
         default: userRole.student
+    },
+    otp:{
+        type : String,
+        null : true,
+        default : ""
     }
 },
 {
